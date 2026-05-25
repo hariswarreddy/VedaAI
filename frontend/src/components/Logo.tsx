@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Logo({ size = 28 }: { size?: number }) {
   return (
     <div className="flex items-center gap-2">
@@ -6,7 +8,7 @@ export function Logo({ size = 28 }: { size?: number }) {
         style={{ width: size, height: size, fontSize: size * 0.55 }}
         aria-hidden
       >
-        V
+        <Image src={"/vedaai.png"} width={30} height={30} alt=""/>
       </div>
       <span className="font-semibold text-ink-900 tracking-tight">VedaAI</span>
     </div>
