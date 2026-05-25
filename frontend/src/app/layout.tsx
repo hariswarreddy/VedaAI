@@ -5,6 +5,9 @@ import { Analytics } from "@vercel/analytics/next"
 export const metadata: Metadata = {
   title: 'VedaAI – Assessment Creator',
   description: 'Generate well-structured assessment papers with AI.',
+  icons: [
+    "/vedaai.png"
+  ]
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
